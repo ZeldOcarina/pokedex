@@ -1,0 +1,28 @@
+@import 'animation';
+
+.Pokedex {
+	animation-name: appear-from-top;
+	animation-duration: 2s;
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(4, 20rem);
+	grid-column-gap: 5rem;
+	grid-row-gap: 2rem;
+	margin-bottom: 4rem;
+
+	&__result {
+		animation-name: appear;
+		animation-duration: 2.8s;
+		text-align: center;
+		margin-bottom: 4rem;
+
+		&--winner {
+			color: green;
+		}
+
+		&--loser {
+			color: red;
+		}
+	}
+}

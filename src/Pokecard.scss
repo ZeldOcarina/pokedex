@@ -1,0 +1,25 @@
+.Pokecard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #d3d3d3;
+	border-radius: 20px;
+
+	&__title {
+		color: blue;
+	}
+
+	&__image {
+		transform: scale(.8);
+		transition: all .3s;
+
+		&:hover {
+			transform: scale(1);
+		}
+	}
+
+	&__type {
+		text-align: center;
+	}
+}
